@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+}
+ 
+#conteudo {
+    width: 800px;
+    height: 1000px;
+    background-color: blue;
+    margin: 0 auto;
+}
+ 
+#cabecalho {
+    width: 800px;
+    height: 300px;
+    background-color: brown;
+    display: flex;
+}
+ 
+#destaques {
+    height: 150px;
+    width: 800px;
+    background-color: lightcoral;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+ 
+#feed {
+    height: 1000px;
+    width: 800px;
+    background-color: antiquewhite;
+}
+ 
+#fotodeperfil {
+    width: 300px;
+    height: 300px;
+    background-color: darkslategrey;
+    padding: 50px;
+    box-sizing: border-box;
+}
+ 
+#fotodeperfil img,
+.destaque img {
+    border-radius: 50%;
+}
+ 
+#textodeperfil {
+    width: 500px;
+    height: 300px;
+    background-color: darkolivegreen;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+ 
+#span-seguindo {
+    font-weight: bold;
+    margin-left: 50px;
+}
+ 
+#juntinhos {
+    margin: 0;
+}
+ 
+#pill {
+    background-color: rgb(231, 223, 223);
+    padding: 8px;
+    border-radius: 20px;
+}
+ 
+#assenao {
+    margin: 15px 0;
+}
+ 
+#icone-link {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-size: 12px;
+    background-image: url("link-icon-vector-isolated-white-background-logo-concept-l-link-icon-vector-isolated-white-background-logo-concept-link-125783372.webp");
+}
+ 
+.destaque {
+    width: 120px;
+    height: 150px;
+    background-color: aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ 
+ .destaque p {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 600;
+}
+#feed {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10;
+    gap: 5px;
+}
