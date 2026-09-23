@@ -1,89 +1,103 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
- 
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Instagram Clone</title>
     <link rel="stylesheet" href="style.css">
-</head>
- 
-<body>
-    <div id="conteudo">
-        <div id="cabecalho">
-            <div id="fotodeperfil">
-                <img height="200" width="200" src="fortaleza-ceara-edit-17-600x398.webp" alt="foto de perfil">
+    <script src="https://unpkg.com/lucide@latest"></script>
+ </head>
+ <body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Instagram</h2>
+         </div>
+         <nav class="menu">
+             <a href="#" class="menu-item active"><span class="material-symbols-outlined">home</span> <span>Página inicial</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">search</span> <span>Pesquisa</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">explore</span> <span>Explorar</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">movie</span> <span>Reels</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">chat</span> <span>Mensagens</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">favorite</span> <span>Notificações</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">add_box</span> <span>Criar</span></a>
+                <a href="#" class="menu-item"><span class="material-symbols-outlined">account_circle</span> <span>Perfil</span></a>
+        
+        </nav>  
+        
+    </aside> 
+
+    <main class="main-container">
+        
+        <section class="feed">
+            
+            <div class="stories-container">
+                <div class="story">
+                    <div class="profile-pic"><img src="https://picsum.photos" alt="User"></div>
+                    <span>seu_amigo</span>
+                </div>
+                
             </div>
-            <div id="textodeperfil">
-                <h3>marcus vinicius</h3>
-                <p>
-                    <b>1.200</b> Seguidores
-                    <span id="span-seguindo">2.000</span> seguindo
-                </p>
-                <p><strong>Digital College - Fortaleza/CE</strong></p>
-                <p class="juntinhos">
-                    <span id="pill">@digitalcollegebr</span>
-                </p>
-                <p class="juntinhos">
-                    <span id="juntinhos">
-                        🏆| Maior escola de IA e habilidades digitais do Brasil.<br>
-                        🧑‍💻| + de 10000 alunos atendidos.<br>
-                        🤝| + 80% de empregabilidade.<br>
-                        👇| Vem ser COLLEGER |👇
-                    </span>
-                </p>
-                <a href="https://bio.digitalcollege.com.br">
-                    <i id="icone-link"></i>
-                    bio.digitalcollege.com.br
-                </a>
+
+            <article class="post">
+
+                <header class="post-header">
+                    <div class="post-author">
+                        <img src="https://picsum.photos" alt="Avatar" class="avatar">
+                        <span class="username">usuario_teste</span>
+                    </div>
+                    <button class="btn-more">•••</button>
+                </header>
+                
+                <div class="post-image">
+                    <img src="https://picsum.photos" alt="Post Content">
+                </div>
+
+                <div class="post-actions">
+                    <div class="left-actions">
+                        <button><i data-lucide="heart"></i></button>
+                        <button><i data-lucide="message-circle"></i></button>
+                        <button><i data-lucide="send"></i></button>
+                    </div>
+                    <button class="save-action"><i data-lucide="bookmark"></i></button>
+                </div>
+
+                <div class="post-body">
+                    <p class="likes"><strong>1,245 curtidas</strong></p>
+                    <p class="caption"><strong>usuario_teste</strong> Codando meu próprio Instagram! 🚀 #webdev #html #css</p>
+                    <span class="time">Há 2 horas</span>
+                </div>
+            </article>
+
+        </section>
+
+        <aside class="suggestions">
+            <div class="user-profile">
+                <img src="https://picsum.photos" alt="Seu Perfil" class="avatar">
+                <div class="user-info">
+                    <strong>seu_usuario</strong>
+                    <span>Seu Nome</span>
+                </div>
+                <button class="btn-switch">Mudar</button>
             </div>
-        </div>
- 
-        <div id="destaques">
-            <div class="destaque">
-                <img src="images (8).jpg" alt="Imagem do destaque">
-                <p>Destaque 1</p>
+            
+            <div class="suggestions-header">
+                <span>Sugestões para você</span>
+                <a href="#">Ver tudo</a>
             </div>
-            <div class="destaque">
-                <img src="images (9).jpg" alt="Imagem do destaque">
-                <p>Destaque 2</p>
+
+            <div class="suggestion-item">
+                <img src="https://picsum.photos" alt="Sugestão" class="avatar">
+                <div class="user-info">
+                    <strong>novo_dev</strong>
+                    <span>Seguido por amigos</span>
+                </div>
+                <button class="btn-follow">Seguir</button>
             </div>
-            <div class="destaque">
-                <img src="images (10).jpg" alt="Imagem do destaque">
-                <p>Destaque 3</p>
-            </div>
-            <div class="destaque">
-                <img src="images (1).jpg" alt="Imagem do destaque">
-                <p>Destaque 4</p>
-            </div>
-            <div class="destaque">
-                <img src="images (3).jpg" alt="Imagem do destaque">
-                <p>Destaque 5</p>
-            </div>
-            <div class="destaque">
-                <img src="images (2).jpg" alt="Imagem do destaque">
-                <p>Destaque 6</p>
-            </div>
-            <div class="destaque">
-                <img src="images (5).jpg" alt="Imagem do destaque">
-                <p>Destaque 7</p>
-            </div>
-        </div>
-        <div id="feed">
-            <img class="post-img" src="Catedral.webp" alt="Post 1">
-            <img class="post-img" src="images (1).jpg" alt="Post 2">
-            <img class="post-img" src="images (2).jpg" alt="Post 3">
-            <img class="post-img" src="images (3).jpg" alt="Post 4">
-            <img class="post-img" src="images (4).jpg" alt="Post 5">
-            <img class="post-img" src="images (5).jpg" alt="Post 6">
-            <img class="post-img" src="images (6).jpg" alt="Post 7">
-            <img class="post-img" src="images (7).jpg" alt="Post 8">
-            <img class="post-img" src="images.jpg" alt="Post 9">
-        </div>
-    </div>
-    </div>
+        </aside>
+
+    </main>
+
+    <script>lucide.createIcons();</script>
 </body>
- 
 </html>
- 
